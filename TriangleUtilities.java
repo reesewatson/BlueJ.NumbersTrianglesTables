@@ -13,33 +13,23 @@ public class TriangleUtilities {
     public static String getTriangle(int numberOfRows) {
         String result = "";
         for(int i = 0; i < numberOfRows; i++) {
-            for(int j = i; j < numberOfRows; j++) {
-                result = result + "*";
-            }
-            result = result + "\n";
+                result = result + "*" + "\n";
         }
         return result;
     }
 
-
     public static String getSmallTriangle() {
         String result = "";
-        for(int i = 0; i < 3; i++) {
-            for(int j = i; j < 3; j++) {
-                result = result + "*";
-            }
-            result = result + "\n";
+        for(int i = 0; i < 6; i++) {
+                result = result + "*" + "\n";
         }
         return result;
     }
 
     public static String getLargeTriangle() {
         String result = "";
-        for(int i = 0; i < 10; i++) {
-            for(int j = i; j < 10; j++) {
-                result = result + "*";
-            }
-            result = result + "\n";
+        for(int i = 0; i < 21; i++) {
+                result = result + "*" + "\n";
         }
         return result;
     }

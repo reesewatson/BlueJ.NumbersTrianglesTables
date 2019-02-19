@@ -2,14 +2,25 @@
 
 public class TableUtilities {
     public static String getSmallMultiplicationTable() {
-        return null;
+        String outcome = TableUtilities.getSmallMultiplicationTable();
+
+        System.out.println(outcome);
+        return outcome;
     }
 
     public static String getLargeMultiplicationTable() {
-        return null;
+        String outcome = TableUtilities.getLargeMultiplicationTable();
+
+        System.out.println(outcome);
+        return outcome;
     }
 
     public static String getMultiplicationTable(int tableSize) {
-        return null;
+        int n = 8;
+
+        String outcome = TableUtilities.getMultiplicationTable(n);
+
+        System.out.println(outcome);
+        return outcome;
     }
 }
