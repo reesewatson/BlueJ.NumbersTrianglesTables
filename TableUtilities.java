@@ -2,25 +2,36 @@
 
 public class TableUtilities {
     public static String getSmallMultiplicationTable() {
-        String outcome = TableUtilities.getSmallMultiplicationTable();
-
-        System.out.println(outcome);
-        return outcome;
+        return getMultiplicationTable(5);
     }
+    
 
     public static String getLargeMultiplicationTable() {
-        String outcome = TableUtilities.getLargeMultiplicationTable();
+        return getMultiplicationTable(10);
 
-        System.out.println(outcome);
-        return outcome;
     }
 
     public static String getMultiplicationTable(int tableSize) {
-        int n = 8;
-
-        String outcome = TableUtilities.getMultiplicationTable(n);
-
-        System.out.println(outcome);
-        return outcome;
+        String result = "";
+        
+        for (int i = 1; i < tableSize + 1; i++){
+            for (int j = 1; j < tableSize + 1; j++){
+                int n = j * i;
+                if (n < 10){
+                    result = result + "  " + n + " |";
+                }
+                else if (n < 100){
+                    result = result + " " + n + " |";
+                }
+                else if (n < 1000){
+                    result = result + n + " |";
+                }
+                if (j == tableSize){
+                    result = result + "\n";
+                }
+            }
+        }
+        
+        return result;
     }
 }
