@@ -54,13 +54,9 @@ public class NumberUtilities {
 
     public static String getExponentiations(int start, int stop, int exponent) {
       String result = "";
-        for(int i = start; i < stop; i++){
-            int intResult = 0;
-            for(int j = 0; j < exponent; j++){
-                intResult = intResult + (i * i);
-            }
-            result = result + intResult;
-        }
+        for(int i = start; i < stop + 1; i++){
+            double num = Math.pow(i, exponent);
+            result = result + (int) num;}
         return result;
     }
 }
